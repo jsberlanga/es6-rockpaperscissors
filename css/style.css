@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro");
+
+:root {
+  --primary-color: #4f3a65;
+  --secondary-color: #574f7d;
+  --dark-color: #63707e;
+  --light-color: #c8dad3;
+  --lose-color: #ff6768;
+  --win-color: #58b368;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.restart__btn {
+  /* display: none; */
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.1rem;
+}
+
+.restart__btn:hover {
+  background: var(--secondary-color);
+  color: #fafafa;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #fafafa;
+}
+
+.score p:first-child {
+  background: var(--primary-color);
+}
+.score p:last-child {
+  background: var(--dark-color);
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.choice:hover {
+  color: var(--secondary-color);
+}
+
+.text--win {
+  color: var(--win-color);
+}
+.text--lose {
+  color: var(--lose-color);
+}
+
+@media (max-width: 768px) {
+  .choice {
+    font-size: 5rem;
+  }
+}

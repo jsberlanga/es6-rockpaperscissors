@@ -1,0 +1,38 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+  background: #fafafa;
+  text-align: center;
+  margin: 10% auto;
+  width: 30rem;
+  padding: 3rem;
+  animation: modalopen 1s;
+}
+
+.modal__content h1 {
+  margin-bottom: 1rem;
+}
+
+.modal__content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
